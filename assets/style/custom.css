@@ -1,0 +1,16 @@
+a, a:active, a:checked, a:visited, a:hover  {
+    color: #6c757d !important;
+}
+
+.threema-icon {
+    height: 9em !important;
+    width: 9em !important;
+}
+
+body {
+    word-wrap: break-word;
+    background-image: url(../image/background_003.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
