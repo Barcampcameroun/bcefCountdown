@@ -2,15 +2,63 @@ a, a:active, a:checked, a:visited, a:hover  {
     color: #6c757d !important;
 }
 
-.threema-icon {
-    height: 9em !important;
-    width: 9em !important;
-}
-
 body {
     word-wrap: break-word;
-    background-image: url(../image/background_003.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-repeat:no-repeat;
+    background-position: center center;
+    z-index: 0;
+
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px); 
+    height: 100%;
+    width: 100%;
+    opacity: 0.75;
+}
+
+.background2 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-repeat:no-repeat;
+    background-position: center center;
+    z-index: -1;
+
+    -webkit-filter: blur(50px);
+    -moz-filter: blur(50px);
+    -o-filter: blur(50px);
+    -ms-filter: blur(50px);
+    filter: blur(50px); 
+    height: 100%;
+    width: 100%;;
+    background-size: 200% 200%;
+    opacity: 0.5;
+}
+
+.centercenter {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 0 0 3px black, 0 0 5px darkslategrey;
+    font-size: 2em;
 }
