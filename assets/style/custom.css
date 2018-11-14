@@ -1,4 +1,8 @@
-a, a:active, a:checked, a:visited, a:hover  {
+a,
+a:active,
+a:checked,
+a:visited,
+a:hover {
     color: #6c757d !important;
 }
 
@@ -15,7 +19,7 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-position: center center;
     z-index: 0;
 
@@ -23,7 +27,7 @@ body {
     -moz-filter: blur(5px);
     -o-filter: blur(5px);
     -ms-filter: blur(5px);
-    filter: blur(5px); 
+    filter: blur(5px);
     height: 100%;
     width: 100%;
     opacity: 0.75;
@@ -33,7 +37,7 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-position: center center;
     z-index: -1;
 
@@ -41,9 +45,10 @@ body {
     -moz-filter: blur(50px);
     -o-filter: blur(50px);
     -ms-filter: blur(50px);
-    filter: blur(50px); 
+    filter: blur(50px);
     height: 100%;
-    width: 100%;;
+    width: 100%;
+    ;
     background-size: 200% 200%;
     opacity: 0.5;
 }
@@ -61,4 +66,14 @@ body {
     color: white;
     text-shadow: 0 0 3px black, 0 0 5px darkslategrey;
     font-size: 2em;
+}
+
+
+a,
+a:active,
+a:hover,
+a:visited {
+    color: white !important;
+    text-decoration: none !important;
+    text-shadow: 0 0 3px black, 0 0 5px darkslategrey;
 }

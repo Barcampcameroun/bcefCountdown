@@ -3,12 +3,13 @@ let images = [
     "assets/image/23416610_375699286177390_4504247050740695040_n.jpg",
     // "assets/image/23417309_139082833328561_7979864341920874496_n.jpg",
     "assets/image/43915186_688084581573248_7078123280328305159_n.jpg",
+    "assets/image/cropped-3Q1A0402-1024x581.jpg",
     "assets/image/23498888_158014178131862_944504836429185024_n.jpg",
 ];
 $(document).ready(function () {
     $('#divID').css("background-image", "url(/myimage.jpg)");
     changeImage();
-    setInterval(10000, changeImage);
+    setInterval(changeImage, 15000);
 });
 
 function changeImage() {
@@ -34,8 +35,8 @@ var x = setInterval(function () {
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-        + minutes + "m ";
+    document.getElementById("countdown").innerHTML = days + "T " + hours + "Std. " +
+        minutes + "Min. ";
 
     // If the count down is finished, write some text 
     if (distance < 0) {
